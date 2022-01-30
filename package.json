@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@quasar/extras": "^1.12.4",
@@ -16,16 +18,24 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
     "@quasar/vite-plugin": "^1.0.4",
+    "@storybook/addon-actions": "^6.5.0-alpha.28",
+    "@storybook/addon-essentials": "^6.5.0-alpha.28",
+    "@storybook/addon-links": "^6.5.0-alpha.28",
+    "@storybook/vue3": "^6.5.0-alpha.28",
     "@types/js-cookie": "^3.0.1",
     "@types/node": "^17.0.12",
     "@vitejs/plugin-vue": "^2.0.0",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.4.0",
     "path": "^0.12.7",
     "sass": "^1.32.0",
+    "storybook-builder-vite": "^0.1.14",
     "vite": "^2.7.2",
-    "vite-aliases": "^0.8.7"
+    "vite-aliases": "^0.8.7",
+    "vue-loader": "^16.8.3"
   }
 }
